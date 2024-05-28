@@ -17,6 +17,7 @@ var host = new HostBuilder()
             options.UseSqlServer(Environment.GetEnvironmentVariable("SqlServer"));
         });
         services.AddScoped<CourseMessageService>();
+        services.AddScoped<CleanerService>();
     })
     .Build();
 
