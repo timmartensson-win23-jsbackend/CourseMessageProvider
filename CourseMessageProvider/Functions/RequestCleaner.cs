@@ -12,7 +12,7 @@ namespace CourseMessageProvider.Functions
         private readonly CleanerService _cleanerService = cleanerService;
 
         [Function("RequestCleaner")]
-        public async void Run([TimerTrigger("0 0 * * * *")] TimerInfo myTimer)
+        public async Task Run([TimerTrigger("0 0 * * * *")] TimerInfo myTimer)
         {
             try
             {
