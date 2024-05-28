@@ -82,7 +82,7 @@ public class CourseMessageService(ILogger<CourseMessageService> logger, IService
                                     <div style='background-color: #f4f4f4; padding: 2rem 2rem;'>
                                         <p>Hello {joinCourseRequest.Email},</p>
                                         <p>We are sending you this message to remind you that you just registered for this course:</p>
-                                        <p style='font-weight: 600; text-align: center; font-size: 25px; letter-spacing: 5px; padding: 2rem 0rem;'>
+                                        <p style='font-weight: 600; text-align: center; font-size: 20px; letter-spacing: 5px; padding: 1rem 0rem;'>
                                             {joinCourseRequest.CourseName}
                                         </p>
                                         <div style='color: #191919; font-size: 12px;'>
