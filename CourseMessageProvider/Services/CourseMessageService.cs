@@ -44,7 +44,7 @@ public class CourseMessageService(ILogger<CourseMessageService> logger, IService
             }
             else
             {
-                context.JoinCourseRequests.Add(new Data.Entities.JoinCourseRequest() { Email = joinCourseRequest.Email, CourseName = joinCourseRequest.CourseName };
+                context.JoinCourseRequests.Add(new Data.Entities.JoinCourseRequest() { Email = joinCourseRequest.Email, CourseName = joinCourseRequest.CourseName });
             }
             await context.SaveChangesAsync();
             return true;
